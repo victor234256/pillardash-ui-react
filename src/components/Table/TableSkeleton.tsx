@@ -1,4 +1,4 @@
-export function TableSkeleton({ columns, rows }: { columns: number; rows: number }) {
+export function TableSkeleton({ columns = 5, rows = 3 }: { columns?: number; rows?: number }) {
     return (
         <>
             {Array.from({ length: rows }).map((_, rowIndex) => (
@@ -8,7 +8,7 @@ export function TableSkeleton({ columns, rows }: { columns: number; rows: number
                             key={`skeleton-cell-${rowIndex}-${colIndex}`}
                             className='whitespace-nowrap px-6 py-4'
                         >
-                            <div className='h-4 animate-pulse rounded bg-gray-200'></div>
+                            <div className='h-4 animate-pulse rounded bg-gray-200 dark:bg-gray-700'></div>
                         </td>
                     ))}
                 </tr>

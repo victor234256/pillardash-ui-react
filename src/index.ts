@@ -18,3 +18,17 @@ export * from "./components/Table";
 
 // Skeleton loader
 export * from "./components/SkeletonLoader";
+
+// loading
+export * from "./components/Loading";
+
+// Breadcrumb
+export * from "./components/Breadcrumb";
+
+// Tooltip
+export * from "./components/Tooltip";
+
+// Badge
+export * from "./components/Badge";
+
+export * from "./components/Document";
